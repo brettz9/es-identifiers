@@ -2,17 +2,12 @@ const unicodeVersion = '10.0.0';
 
 const fs = require('fs');
 const path = require('path');
-const regenerate = require('regenerate');
 
 const latestUnicode = 'unicode-' + unicodeVersion;
 
 // We could use `regenerate` for all strings, but this seemed easier
-const UnicodeIDStart = regenerate(
-    require(latestUnicode + '/Binary_Property/ID_Start/code-points.js')
-).toString();
-const UnicodeIDContinue = regenerate(
-    require(latestUnicode + '/Binary_Property/ID_Continue/code-points.js')
-).toString();
+const UnicodeIDStart = require(latestUnicode + '/Binary_Property/ID_Start/regex.js').source;
+const UnicodeIDContinue = require(latestUnicode + '/Binary_Property/ID_Continue/regex.js').source;
 
 const ZWNJ = '\\u200C';
 const ZWJ = '\\u200D';
