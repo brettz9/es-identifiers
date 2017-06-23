@@ -54,7 +54,7 @@ fs.writeFileSync(
 fs.writeFileSync(
     path.join(__dirname, 'dist', 'es-identifiers-browser.js'),
     // `window.ESIdentifiers = ${JSON.stringify(module.exports)};
-    `window.ESIdentifiers.IdentifierName = /${whole_IdentifierName}/;`
+    `window.ESIdentifiers = {IdentifierName: /${whole_IdentifierName}/};`
 );
 
 console.log(`/whole_IdentifierName/`, eval(`/${whole_IdentifierName}/`));

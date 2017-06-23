@@ -1,5 +1,8 @@
 # es-identifiers
 
+## 0.0.4
+- Fix browser build
+
 ## 0.0.3
 - Fix `Hex4Digits`
 
