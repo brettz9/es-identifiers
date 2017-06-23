@@ -52,14 +52,14 @@ module.exports = {
 */
 
 fs.writeFileSync(
-    path.join(__dirname, 'dist', 'unicode-identifiers.js'),
+    path.join(__dirname, 'dist', 'es-identifiers.js'),
     // `module.exports = ${JSON.stringify(module.exports)};
     `module.exports.IdentifierName = /${whole_IdentifierName}/;`
 );
 fs.writeFileSync(
-    path.join(__dirname, 'dist', 'unicode-identifiers-browser.js'),
-    // `window.unicodeIdentifiers = ${JSON.stringify(module.exports)};
-    `window.UnicodeIdentifiers.IdentifierName = /${whole_IdentifierName}/;`
+    path.join(__dirname, 'dist', 'es-identifiers-browser.js'),
+    // `window.ESIdentifiers = ${JSON.stringify(module.exports)};
+    `window.ESIdentifiers.IdentifierName = /${whole_IdentifierName}/;`
 );
 
 console.log(`/whole_IdentifierName/`);
