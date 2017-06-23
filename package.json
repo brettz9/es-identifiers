@@ -1,6 +1,6 @@
 {
   "name": "es-identifiers",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Regular expressions of ECMAScript (Unicode-based) IdentifierName production",
   "main": "dist/es-identifiers.js",
   "scripts": {
@@ -20,6 +20,8 @@
     "javascript"
   ],
   "author": "Brett Zamir",
+  "contributors": [],
+  "engines": {},
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/brettz9/es-identifiers/issues"
