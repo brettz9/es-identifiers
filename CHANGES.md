@@ -1,13 +1,16 @@
 # es-identifiers
 
+## 0.0.5
+-   Make regex 'u' flag compatible (even though not exporting a 'u' flag regex)
+
 ## 0.0.4
-- Fix browser build
+-   Fix browser build
 
 ## 0.0.3
-- Fix `Hex4Digits`
+-   Fix `Hex4Digits`
 
 ## 0.0.2
-- Remove `regenerate` direct dependency
+-   Remove `regenerate` direct dependency
 
 ## 0.0.1
-- Initial release
+-   Initial release
