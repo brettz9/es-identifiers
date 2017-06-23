@@ -19,7 +19,7 @@ const HexDigit = '[0-9a-fA-F]';
 // const HexDigits = HexDigit + HexDigit + '*';
 const HexDigits = '0*(?:' + HexDigit + '{1,5}|10' + HexDigit + '{4})*';
 const Hex4Digits = '(?:' + HexDigits + '){4}';
-const UnicodeEscapeSequence = '(?:u' + Hex4Digits + '|u\\{' + HexDigits + '})';
+const UnicodeEscapeSequence = '(?:u' + Hex4Digits + '|u\\{' + HexDigits + '\\})';
 
 const IdentifierStart = '(?:' + UnicodeIDStart + '|[$_]|\\\\' + UnicodeEscapeSequence + ')';
 const IdentifierPart = '(?:' + UnicodeIDContinue + '|[$_]|\\\\' + UnicodeEscapeSequence + '|' + ZWNJ + '|' + ZWJ + ')';

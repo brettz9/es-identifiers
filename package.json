@@ -1,6 +1,6 @@
 {
   "name": "es-identifiers",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Regular expressions of ECMAScript (Unicode-based) IdentifierName production",
   "main": "dist/es-identifiers.js",
   "scripts": {

@@ -1,5 +1,8 @@
 # es-identifiers
 
+## 0.0.6
+-   Fix escaping of ending bracket for `u`-flag compatibility.
+
 ## 0.0.5
 -   Make regex 'u' flag compatible (even though not exporting a 'u' flag regex)
 
