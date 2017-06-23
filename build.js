@@ -18,7 +18,7 @@ const HexDigit = '[0-9a-fA-F]';
 //   establishing the limit in regular expressions
 // const HexDigits = HexDigit + HexDigit + '*';
 const HexDigits = '0*(?:' + HexDigit + '{1,5}|10' + HexDigit + '{4})*';
-const Hex4Digits = HexDigits + '{4}';
+const Hex4Digits = '(?:' + HexDigits + '){4}';
 const UnicodeEscapeSequence = '(?:u' + Hex4Digits + '|u{' + HexDigits + '})';
 
 const IdentifierStart = '(?:' + UnicodeIDStart + '|[$_]|\\\\' + UnicodeEscapeSequence + ')';
@@ -57,5 +57,5 @@ fs.writeFileSync(
     `window.ESIdentifiers.IdentifierName = /${whole_IdentifierName}/;`
 );
 
-console.log(`/whole_IdentifierName/`);
+console.log(`/whole_IdentifierName/`, eval(`/${whole_IdentifierName}/`));
 // const regex = /<%= set.toString() %>/gim;
