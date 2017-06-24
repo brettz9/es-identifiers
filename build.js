@@ -9,20 +9,11 @@ const latestUnicode = 'unicode-' + unicodeVersion;
 const UnicodeIDStart = require(latestUnicode + '/Binary_Property/ID_Start/regex.js').source;
 const UnicodeIDContinue = require(latestUnicode + '/Binary_Property/ID_Continue/regex.js').source;
 
-const ZWNJ = '\\u200C';
-const ZWJ = '\\u200D';
+const ZWNJ = '\u200C';
+const ZWJ = '\u200D';
 
-const HexDigit = '[0-9a-fA-F]';
-// The commented out line below is technically the grammar, with a SyntaxError
-//   to occur if larger than U+10FFFF, but we will prevent the error by
-//   establishing the limit in regular expressions
-// const HexDigits = HexDigit + HexDigit + '*';
-const HexDigits = '0*(?:' + HexDigit + '{1,5}|10' + HexDigit + '{4})*';
-const Hex4Digits = '(?:' + HexDigits + '){4}';
-const UnicodeEscapeSequence = '(?:u' + Hex4Digits + '|u\\{' + HexDigits + '\\})';
-
-const IdentifierStart = '(?:' + UnicodeIDStart + '|[$_]|\\\\' + UnicodeEscapeSequence + ')';
-const IdentifierPart = '(?:' + UnicodeIDContinue + '|[$_]|\\\\' + UnicodeEscapeSequence + '|' + ZWNJ + '|' + ZWJ + ')';
+const IdentifierStart = '(?:' + UnicodeIDStart + '|[$_])';
+const IdentifierPart = '(?:' + UnicodeIDContinue + '|[$_' + ZWNJ + ZWJ + '])';
 const IdentifierName = IdentifierStart + IdentifierPart + '*';
 
 const whole_IdentifierName = '^' + IdentifierName + '$';

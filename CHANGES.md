@@ -1,5 +1,10 @@
 # es-identifiers
 
+## 0.0.7
+- Fix: Avoid arbitrary Unicode sequence escapes (removing as
+    JavaScript will resolve anyways)
+- Fix: Change to check single instead of double-escaped ZWJ/ZWNJ
+
 ## 0.0.6
 -   Fix escaping of ending bracket for `u`-flag compatibility.
 
