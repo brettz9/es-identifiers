@@ -1,5 +1,8 @@
 # es-identifiers
 
+## 0.0.8
+- Provide ES6 module build
+
 ## 0.0.7
 - Fix: Avoid arbitrary Unicode sequence escapes (removing as
     JavaScript will resolve anyways)

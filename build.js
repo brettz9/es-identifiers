@@ -47,6 +47,11 @@ fs.writeFileSync(
     // `window.ESIdentifiers = ${JSON.stringify(module.exports)};
     `window.ESIdentifiers = {IdentifierName: /${whole_IdentifierName}/};`
 );
+fs.writeFileSync(
+    path.join(__dirname, 'dist', 'es-identifiers-es6.js'),
+    // `window.ESIdentifiers = ${JSON.stringify(module.exports)};
+    `export default {IdentifierName: /${whole_IdentifierName}/};`
+);
 
 console.log(`/whole_IdentifierName/`, eval(`/${whole_IdentifierName}/`));
 // const regex = /<%= set.toString() %>/gim;
