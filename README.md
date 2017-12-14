@@ -1,5 +1,7 @@
 # es-identifiers
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/brettz9/es-identifiers.svg)](https://greenkeeper.io/)
+
 Regular expressions of ECMAScript's (Unicode-based) `IdentifierName` production (per
 latest available Unicode version, currently 10.0.0).
 
