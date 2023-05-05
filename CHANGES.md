@@ -1,5 +1,9 @@
 # es-identifiers
 
+## 0.1.1
+
+- fix: use `nodenext` for `moduleResolution`
+
 ## 0.1.0
 
 - feat: update to Unicode 15
