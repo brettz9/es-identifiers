@@ -1,5 +1,11 @@
 # es-identifiers
 
+## 0.1.0
+
+- feat: update to Unicode 15
+- feat: switch to ESM
+- feat: add typings
+
 ## 0.0.8
 - Provide ES6 module build
 
