@@ -2,7 +2,7 @@
   "compilerOptions": {
     "lib": ["es2022"],
     "moduleResolution": "nodenext",
-    "module": "CommonJS",
+    "module": "UMD",
     "allowJs": true,
     "checkJs": true,
     "noEmit": false,
@@ -13,6 +13,6 @@
     "target": "es6",
     "outDir": "dist"
   },
-  "include": ["dist/es-identifiers.cjs"],
+  "include": ["dist/es-identifiers-browser.js"],
   "exclude": ["node_modules"]
 }
