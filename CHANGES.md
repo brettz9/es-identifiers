@@ -1,5 +1,9 @@
 # es-identifiers
 
+## 0.1.2
+
+- fix: use `NodeNext` for `module`
+
 ## 0.1.1
 
 - fix: use `nodenext` for `moduleResolution`
