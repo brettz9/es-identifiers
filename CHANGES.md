@@ -1,5 +1,9 @@
 # es-identifiers
 
+## 0.2.0
+
+- feat: update to Unicode 16
+
 ## 0.1.2
 
 - fix: use `NodeNext` for `module`
