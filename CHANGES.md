@@ -1,5 +1,9 @@
 # es-identifiers
 
+## 0.3.0
+
+- feat: update to Unicode 17
+
 ## 0.2.0
 
 - feat: update to Unicode 16

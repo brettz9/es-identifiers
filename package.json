@@ -1,6 +1,6 @@
 {
   "name": "es-identifiers",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Regular expressions of ECMAScript (Unicode-based) IdentifierName production",
   "main": "./dist/es-identifiers.cjs",
   "type": "module",
@@ -28,8 +28,8 @@
     "url": "git+https://github.com/brettz9/es-identifiers.git"
   },
   "devDependencies": {
-    "@unicode/unicode-16.0.0": "1.0.0",
-    "typescript": "^5.5.4"
+    "@unicode/unicode-17.0.0": "1.6.10",
+    "typescript": "^5.9.2"
   },
   "keywords": [
     "Unicode",
